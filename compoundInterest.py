@@ -8,9 +8,9 @@ def calculateCompoundInterest():
         client_one_rate =      float(input("Rate:               "))
 
         amount = client_one_principal * (1.0 + client_one_rate/100.0)**client_one_time
-        compInt = amount - client_one_principal
+        compInt = round(float(amount) - client_one_principal, 2)
 
-        print("Compound Interest: "+str("{:.2f}".format(compInt)))
+        print("Compound Interest: "+ str("{:.2f}".format(compInt)))
 
         if count == 3:
             break
@@ -19,9 +19,10 @@ def calculateCompoundInterest():
 
 
     # end assignment
+
 ## if you want to test locally before you try to sync
 ## uncomment calculateCompoundInterest() and run > python monkeyCalculator.py
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
 
-#calculateCompoundInterest()
+calculateCompoundInterest()
