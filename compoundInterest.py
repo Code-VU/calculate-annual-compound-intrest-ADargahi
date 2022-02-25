@@ -1,21 +1,31 @@
 def calculateCompoundInterest():
-    count = 0
-    for i in range(0, 3):
-        count += 1
-        # This first 3 lines are provided for you
-        client_one_principal = float(input("Principle (amount): "))
-        client_one_time =      float(input("Time:               "))
-        client_one_rate =      float(input("Rate:               "))
+    
+# This first 3 lines are provided for you
+    client_one_principal = float(input("Principle (amount): "))
+    client_one_time =      float(input("Time:               "))
+    client_one_rate =      float(input("Rate:               "))
+    a = client_one_principal * ((1 + client_one_rate/100) ** client_one_time)
+    compInt = a - client_one_principal
+    limited_float = round(compInt, 2)
+    print('Compound Interest:',limited_float)
+    print('---')
 
-        amount = client_one_principal * (1.0 + client_one_rate/100.0)**client_one_time
-        compInt = round(float(amount) - client_one_principal, 2)
-
-        print("Compound Interest: "+ str("{:.2f}".format(compInt)))
-
-        if count == 3:
-            break
-        else:
-            print("---")
+    client_one_principal = float(input("Principle (amount): "))
+    client_one_time =      float(input("Time:               "))
+    client_one_rate =      float(input("Rate:               "))
+    a = client_one_principal * ((1 + client_one_rate/100) ** client_one_time)
+    compInt = a - client_one_principal
+    limited_float = round(compInt, 2)
+    print('Compound Interest:',limited_float)
+    print('---')
+    
+    client_one_principal = float(input("Principle (amount): "))
+    client_one_time =      float(input("Time:               "))
+    client_one_rate =      float(input("Rate:               "))
+    a = client_one_principal * ((1 + client_one_rate/100) ** client_one_time)
+    compInt = a - client_one_principal
+    limited_float = round(compInt, 2)
+    print('Compound Interest:',limited_float)
 
 
     # end assignment
